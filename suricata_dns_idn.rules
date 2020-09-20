@@ -1,0 +1,1 @@
+alert dns any any -> any any (msg:"Internationalized punycode domain name DNS query"; dns.query; pcre:"/\bxn--/i"; sid:1;)
